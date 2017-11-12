@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:theme="@android:style/Theme.NoTitleBar">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:elevation="1dp">
+
+        <fragment
+            android:id="@+id/fragment3"
+            android:name="com.example.tuan.myapplication.TextInfoFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal" />
+
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="com.example.tuan.myapplication.PlayerInfoFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:background="@drawable/option_button"
+            app:srcCompat="@drawable/setting_icon" />
+
+        <TextView
+            android:id="@+id/seekBarTextLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp" />
+
+        <SeekBar
+            android:id="@+id/scaleSeekBar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:max="100"
+            android:paddingLeft="0dp"
+            android:progress="50" />
+
+        <TextView
+            android:id="@+id/seekBarTextRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="132dp"
+            android:layout_marginTop="20dp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:scrollbars="none">
+
+            <fragment
+                android:id="@+id/fragment_player_list"
+                android:name="com.example.tuan.myapplication.PlayerListFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </ScrollView>
+
+        <fragment
+            android:id="@+id/fragment4"
+            android:name="com.example.tuan.myapplication.RollDiceResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right" />
+
+    </FrameLayout>
+</RelativeLayout>

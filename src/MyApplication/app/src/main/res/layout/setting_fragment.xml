@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_fragment_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/colorActivatedHighlight"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/buildButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_weight="1"
+        android:text="Build" />
+
+    <Button
+        android:id="@+id/diceButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_weight="1"
+        android:text="Roll Dice !" />
+
+    <Button
+        android:id="@+id/tradeButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_weight="1"
+        android:elevation="0dp"
+        android:text="Trade" />
+
+    <Button
+        android:id="@+id/exchangeButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Exchange !" />
+
+</GridLayout>

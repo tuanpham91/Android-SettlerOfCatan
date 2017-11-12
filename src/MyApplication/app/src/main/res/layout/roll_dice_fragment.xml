@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/roll_dice_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="0dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="10dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/roll_dice_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="Roll the Dice!"
+        android:textColor="#e80b0b"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/quit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="2"
+            android:layout_weight="1"
+            android:background="#00edff"
+            android:text="Quit"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/roll_activate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginTop="10dp"
+            android:layout_row="2"
+            android:layout_weight="1"
+            android:background="#00edff"
+            android:text="Roll"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_dice_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="1"
+            android:background="#000000"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/dice_2" />
+
+        <ImageView
+            android:id="@+id/image_dice_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_column="0"
+            android:layout_gravity="right|center"
+            android:layout_marginTop="10dp"
+            android:layout_row="1"
+            android:background="#000000"
+            app:srcCompat="@drawable/dice_1" />
+    </GridLayout>
+</LinearLayout>

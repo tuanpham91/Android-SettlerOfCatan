@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/build_act_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="1dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/build_act_frame_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/robber"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginBottom="200dp"
+        app:srcCompat="@drawable/robber" />
+
+    <ImageView
+        android:id="@+id/build_settlement_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left|center_vertical"
+
+        app:srcCompat="@drawable/new_settlement_icon" />
+
+    <ImageView
+        android:id="@+id/build_city_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginBottom="100dp"
+        app:srcCompat="@drawable/new_city_icon" />
+
+    <ImageView
+        android:id="@+id/build_street_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/new_street_icon" />
+
+    <Button
+        android:id="@+id/build_button_buildact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="0dp"
+        android:text="Confirm" />
+
+    <ImageView
+        android:id="@+id/exit_buildactivity"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        app:srcCompat="@drawable/setting_exit_icon" />
+
+    <FrameLayout
+        android:id="@+id/build_act_frame_layout_2"
+        android:layout_width="386dp"
+        android:layout_height="603dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Choose What you want to Build!"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+</FrameLayout>

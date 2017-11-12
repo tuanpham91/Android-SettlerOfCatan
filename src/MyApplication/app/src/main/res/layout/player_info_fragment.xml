@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_border"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:visibility="visible">
+
+        <ImageView
+            style="@style/Icon_Style"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/wood_trade_icon" />
+
+        <TextView
+            android:id="@+id/num_lumber"
+            style="@style/TextViewStyle"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:text="@string/initialValue"
+            android:textSize="15sp" />
+
+        <ImageView
+            style="@style/Icon_Style"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/brick_trade_icon" />
+
+        <TextView
+            android:id="@+id/num_brick"
+            style="@style/TextViewStyle"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/initialValue"
+            android:textSize="15sp" />
+
+        <ImageView
+            style="@style/Icon_Style"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/sheep_trade_icon" />
+
+        <TextView
+            android:id="@+id/num_wool"
+            style="@style/TextViewStyle"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/initialValue"
+            android:textSize="15sp" />
+
+        <ImageView
+            style="@style/Icon_Style"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ore_trade_icon" />
+
+        <TextView
+            android:id="@+id/num_ore"
+            style="@style/TextViewStyle"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/initialValue"
+            android:textSize="15sp" />
+
+        <ImageView
+            style="@style/Icon_Style"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/wheat_trade_icon" />
+
+        <TextView
+            android:id="@+id/num_wheat"
+            style="@style/TextViewStyle"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/initialValue"
+            android:textSize="15sp" />
+</LinearLayout>

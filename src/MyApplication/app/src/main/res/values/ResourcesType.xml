@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="resources_type_array">
+        <item>Wood</item>
+        <item>Wool</item>
+        <item>Grain</item>
+        <item>Ore</item>
+        <item>Brick</item>
+    </string-array>
+</resources>
